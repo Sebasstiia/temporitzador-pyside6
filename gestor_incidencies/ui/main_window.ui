@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>530</width>
-    <height>244</height>
+    <width>885</width>
+    <height>719</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,30 +16,40 @@
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <layout class="QHBoxLayout" name="filterLayout">
+     <layout class="QVBoxLayout" name="mainLayout">
       <item>
-       <widget class="QLineEdit" name="searchEdit">
-        <property name="placeholderText">
-         <string>Cerca</string>
-        </property>
-       </widget>
+       <layout class="QHBoxLayout" name="headerLayout">
+        <item>
+         <widget class="QPushButton" name="btnCreacioIncidencia">
+          <property name="text">
+           <string>Crear Incidencia</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="Title">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:36pt; font-weight:700;&quot;&gt;Gestor D’incidències&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </item>
       <item>
-       <widget class="QComboBox" name="statusFilter"/>
-      </item>
-      <item>
-       <widget class="QComboBox" name="priorityFilter"/>
+       <layout class="QHBoxLayout" name="bodyLayout">
+        <item>
+         <widget class="QToolButton" name="menu">
+          <property name="text">
+           <string>...</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QListView" name="llistaIncidencies"/>
+        </item>
+       </layout>
       </item>
      </layout>
-    </item>
-    <item>
-     <widget class="QSplitter" name="mainSplitter">
-      <property name="orientation">
-       <enum>Qt::Orientation::Horizontal</enum>
-      </property>
-      <widget class="QTableView" name="incidentsTable"/>
-      <widget class="QPlainTextEdit" name="detailPanel"/>
-     </widget>
     </item>
    </layout>
   </widget>
