@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>550</width>
+    <height>393</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #cceafa;</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>-1</y>
+     <width>551</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #91cafa;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Shape::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Shadow::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="pushButtonCrear">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>101</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #36a9f5;
+color: white;
+border: 1px solid #247fc2;
+padding: 5px;</string>
+    </property>
+    <property name="text">
+     <string>Crear Incidencia</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelTitulo">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>10</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Gestor D'icidencies</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>60</y>
+     <width>401</width>
+     <height>331</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Shape::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Shadow::Raised</enum>
+   </property>
+   <widget class="QLabel" name="labelIncidencies">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>401</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Incidencies en concert</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>30</y>
+      <width>401</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #f3faff;
+gridline-color: #333333;</string>
+    </property>
+    <property name="rowCount">
+     <number>5</number>
+    </property>
+    <property name="columnCount">
+     <number>5</number>
+    </property>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <item row="0" column="0">
+     <property name="text">
+      <string>Titol</string>
+     </property>
+    </item>
+    <item row="0" column="1">
+     <property name="text">
+      <string>Categoria</string>
+     </property>
+    </item>
+    <item row="0" column="2">
+     <property name="text">
+      <string>Prioritat</string>
+     </property>
+    </item>
+    <item row="0" column="3">
+     <property name="text">
+      <string>Estat</string>
+     </property>
+    </item>
+    <item row="0" column="4">
+     <property name="text">
+      <string>Venciment</string>
+     </property>
+    </item>
+    <item row="1" column="0">
+     <property name="text">
+      <string>Incidencia 1</string>
+     </property>
+    </item>
+    <item row="1" column="1">
+     <property name="text">
+      <string>Categoria</string>
+     </property>
+    </item>
+    <item row="1" column="2">
+     <property name="text">
+      <string>baixa</string>
+     </property>
+    </item>
+    <item row="1" column="3">
+     <property name="text">
+      <string>obert</string>
+     </property>
+    </item>
+    <item row="1" column="4">
+     <property name="text">
+      <string>Venciment</string>
+     </property>
+    </item>
+    <item row="2" column="0">
+     <property name="text">
+      <string>Incidencia 2</string>
+     </property>
+    </item>
+    <item row="2" column="1">
+     <property name="text">
+      <string>Categoria</string>
+     </property>
+    </item>
+    <item row="2" column="2">
+     <property name="text">
+      <string>mitja</string>
+     </property>
+    </item>
+    <item row="2" column="3">
+     <property name="text">
+      <string>obert</string>
+     </property>
+    </item>
+    <item row="2" column="4">
+     <property name="text">
+      <string>Venciment</string>
+     </property>
+    </item>
+    <item row="3" column="0">
+     <property name="text">
+      <string>Incidencia 3</string>
+     </property>
+    </item>
+    <item row="3" column="1">
+     <property name="text">
+      <string>Categoria</string>
+     </property>
+    </item>
+    <item row="3" column="2">
+     <property name="text">
+      <string>mitja</string>
+     </property>
+    </item>
+    <item row="3" column="3">
+     <property name="text">
+      <string>acabat</string>
+     </property>
+    </item>
+    <item row="3" column="4">
+     <property name="text">
+      <string>Venciment</string>
+     </property>
+    </item>
+    <item row="4" column="0">
+     <property name="text">
+      <string>Incidencia 4</string>
+     </property>
+    </item>
+    <item row="4" column="1">
+     <property name="text">
+      <string>Categoria</string>
+     </property>
+    </item>
+    <item row="4" column="2">
+     <property name="text">
+      <string>alta</string>
+     </property>
+    </item>
+    <item row="4" column="3">
+     <property name="text">
+      <string>en proces</string>
+     </property>
+    </item>
+    <item row="4" column="4">
+     <property name="text">
+      <string>Venciment</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_3">
+   <property name="geometry">
+    <rect>
+     <x>409</x>
+     <y>60</y>
+     <width>141</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #91c7f2;
+border: none;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Shape::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Shadow::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>0</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Incidencies 1</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>121</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #f3faff;
+gridline-color: #333333;</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
